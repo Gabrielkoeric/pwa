@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>PWA</title>
+		<link rel="manifest" href="./manifest.json">
+		<link rel="stylesheet" href="./style.css">
+
+	</head>
+	<body>
+		<a href="cores/listar.html" class="btn btn-dark mb-2">Cores</a>
+		<a class="btn btn-dark mb-2">Marcas</a>
+		<a class="btn btn-dark mb-2">Modelos</a>
+		<a class="btn btn-dark mb-2">Carros</a>
+	</body>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js');
+		}
+	</script>
+</html>
